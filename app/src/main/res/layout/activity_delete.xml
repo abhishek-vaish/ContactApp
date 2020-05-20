@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40sp"
+            android:text="Delete Contact"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:orientation="vertical">
+
+            <AutoCompleteTextView
+                android:id="@+id/delete_auto"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:background="@drawable/search_bar"
+                android:hint="Enter full name to delete"
+                android:paddingLeft="20sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/delete_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100sp"
+            android:background="@drawable/button"
+            android:text="Delete"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
